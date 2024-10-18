@@ -1,0 +1,42 @@
+[project]
+name = "clarity_basics"
+authors = []
+description = ""
+telemetry = false
+requirements = []
+[contracts.artist_discography]
+path = "contracts/artist_discography.clar"
+depends_on = []
+
+[contracts.clarinet_fundamentals]
+path = "contracts/clarinet_fundamentals.clar"
+depends_on = []
+
+[contracts.clarity_basics]
+path = "contracts/clarity_basics.clar"
+depends_on = []
+
+[contracts.clarity_fundamentals_ii]
+path = "contracts/clarity_fundamentals_ii.clar"
+depends_on = []
+
+[contracts.community-hello-world]
+path = "contracts/community-hello-world.clar"
+depends_on = []
+
+[contracts.offspring-will]
+path = "contracts/offspring-will.clar"
+depends_on = []
+
+[repl]
+costs_version = 2
+parser_version = 2
+
+[repl.analysis]
+passes = ["check_checker"]
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
